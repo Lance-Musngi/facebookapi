@@ -10,11 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                // Allow frontend dev (localhost) and deployed frontend
-                .allowedOrigins(
-                    "http://localhost:5173",                       // local dev
-                    "https://facebook-frontend-4p6j.onrender.com"  // deployed frontend
-                )
+                .allowedOrigins("http://localhost:5173", "https://facebook-frontend-4p6j.onrender.com")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
     }
