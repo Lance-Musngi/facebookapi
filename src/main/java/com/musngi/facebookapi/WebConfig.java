@@ -1,4 +1,4 @@
-package com.example.facebookapi.config;
+package com.musngi.facebookapi;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
