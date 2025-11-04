@@ -12,8 +12,8 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/api/**")
                 // Allow frontend dev (localhost) and deployed frontend
                 .allowedOrigins(
-                    "http://localhost:5173",                       // local dev
-                    "https://facebook-frontend-4p6j.onrender.com"  // deployed frontend
+                    "http://localhost:5173",                       // local dev
+                    "https://facebook-frontend-4p6j.onrender.com"  // deployed frontend
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
